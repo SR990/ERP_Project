@@ -39,7 +39,7 @@ const Sidebar = () => {
           <span>Staff</span>
         </NavLink>
 
-        <NavLink to="/payment" className="text-gray-600 hover:bg-blue-100 px-3 py-2 rounded-md flex items-center space-x-2">
+        <NavLink to="/payment-voucher" className="text-gray-600 hover:bg-blue-100 px-3 py-2 rounded-md flex items-center space-x-2">
           <FaFileInvoiceDollar />
           <span>Payment Voucher</span>
         </NavLink>
