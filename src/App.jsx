@@ -9,6 +9,17 @@ import CreateBudget from './components/CreateBudget';
 import Success from './components/Success';
 import Circulars from './components/Circulars';
 import CreateCircular from './components/createCircular';
+import Memo from './components/Memo';
+import CreateMemo from './components/CreateMemo';
+import Maintenance from './components/Maintenance';
+import ScheduleMaintenance from './components/ScheduleMaintenance';
+import ProcurementDashboard from './components/ProcurementDashboard';
+import ProcurementRequest from './components/ProcurementRequest';
+import ProcurementDetail from './components/ProcurementDetail';
+
+
+
+
 import CapacityDashboard from './pages/CapacityDashboard';
 import CapacityPage from './components/CapacityPage';
 import Success2 from './components/Success2';
@@ -34,7 +45,7 @@ import CreatePaymentVoucher from './components/CreatePaymentVoucher';
 import NotificationsPage from './components/NotificationsPage';
 import HRNotificationDetail from './components/HRNotificationDetail';
 
-function App () {
+function App() {
   return (
     <div className="flex">
       <Sidebar />
@@ -46,12 +57,20 @@ function App () {
           <Route path="/success" element={<Success />} />
           <Route path="/circulars" element={<Circulars />} />
           <Route path="/create-circular" element={<CreateCircular />} />
+          <Route path="/memo" element={<Memo />} />
+          <Route path="/create-memo" element={<CreateMemo />} />
+          <Route path="/maintenance" element={<Maintenance />} />
+          <Route path="/schedule-maintenance" element={<ScheduleMaintenance />} />
+          <Route path="/procurements" element={<ProcurementDashboard />} />
+          <Route path="/procurement-request" element={<ProcurementRequest />} />
+          <Route path="/procurement-detail" element={<ProcurementDetail />} />
+
 
 
           <Route path="/logistics" element={<LogisticsList />} />
           <Route path="/logistics/request" element={<LogisticsForm />} />
           <Route path="/success" element={<Success1 />} />
-          
+
 
 
 

@@ -93,14 +93,10 @@ const Circulars = () => {
                 </div>
 
                 <div className="flex justify-between items-center mt-4 text-sm text-gray-600">
-                    <span>Showing</span>
-                    <select className="border px-2 py-1 rounded ml-2">
-                        <option>13</option>
-                    </select>
-                    <span>per page</span>
+
 
                     <div className="flex gap-2 ml-auto">
-                        {[1, 2, 3, 4, 5].map((num) => (
+                        {[].map((num) => (
                             <button
                                 key={num}
                                 className={`px-3 py-1 border rounded ${num === 1 ? 'bg-blue-500 text-white' : 'bg-white text-gray-700'}`}
