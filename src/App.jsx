@@ -9,6 +9,12 @@ import CreateBudget from './components/CreateBudget';
 import Success from './components/Success';
 import Circulars from './components/Circulars';
 import CreateCircular from './components/createCircular';
+import CapacityDashboard from './pages/CapacityDashboard';
+import CapacityPage from './components/CapacityPage';
+import Success2 from './components/Success2';
+import TrainingDetails from './components/TrainingDetails';
+import StocksInventoryPage from './pages/StocksInventoryPage';
+import UpdateStockForm from './components/UpdateStockForm';
 
 
 
@@ -31,6 +37,12 @@ const App = () => {
           <Route path="/logistics" element={<LogisticsList />} />
           <Route path="/logistics/request" element={<LogisticsForm />} />
           <Route path="/success" element={<Success1 />} />
+          <Route path="/capacitydashboard" element={<CapacityDashboard />} />
+          <Route path="/training-request" element={<CapacityPage />} />
+          <Route path="/success2" element={<Success2 />} />
+          <Route path="/training-details" element={<TrainingDetails />} />
+          <Route path="/inventory" element={<StocksInventoryPage />} />
+          <Route path="/update-stock" element={<UpdateStockForm />} />
           
 
         </Routes>
