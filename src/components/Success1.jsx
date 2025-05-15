@@ -15,7 +15,7 @@ const Success1 = () => {
             <h2 className="text-2xl font-semibold text-green-500 mb-4">Logistics Request Submitted Successfully!</h2>
             <p>Your logistics request has been submitted successfully.</p>
             <button
-                onClick={() => navigate("/logistics")} // Navigate back to logistics page
+                onClick={() => navigate("/logistics")} 
                 className="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700"
             >
                 Go Back to Logistics

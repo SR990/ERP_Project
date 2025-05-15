@@ -1,4 +1,4 @@
-
+import { Routes, Route } from 'react-router-dom';
 import Sidebar from './components/Sidebar';
 import Dashboard from './pages/Dashboard';
 import LogisticsList from './pages/LogisticsList';
@@ -26,10 +26,6 @@ import Success2 from './components/Success2';
 import TrainingDetails from './components/TrainingDetails';
 import StocksInventoryPage from './pages/StocksInventoryPage';
 import UpdateStockForm from './components/UpdateStockForm';
-
-
-
-import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import CreateSalaryDefinition from './pages/CreateSalaryDefinition';
 import CreateTaxDefinition from './pages/CreateTaxDefinition';
@@ -69,11 +65,13 @@ function App() {
 
           <Route path="/logistics" element={<LogisticsList />} />
           <Route path="/logistics/request" element={<LogisticsForm />} />
-          <Route path="/success" element={<Success1 />} />
-
-
-
-
+          <Route path="/success1" element={<Success1 />} />
+          <Route path="/capacitydashboard" element={<CapacityDashboard />} />
+          <Route path="/training-request" element={<CapacityPage />} />
+          <Route path="/success2" element={<Success2 />} />
+          <Route path="/training-details" element={<TrainingDetails />} />
+          <Route path="/inventory" element={<StocksInventoryPage />} />
+          <Route path="/update-stock" element={<UpdateStockForm />} />
           <Route path="/create-salary-definition" element={<CreateSalaryDefinition />} />
           <Route path="/create-tax-definition" element={<CreateTaxDefinition />} />
           <Route path="/create-payroll-definition" element={<CreatePayRollDefinition />} />
@@ -87,7 +85,6 @@ function App() {
           <Route path="/create-payment-voucher" element={<CreatePaymentVoucher />} /> {/* ✅ New */}
           <Route path="/notifications" element={<NotificationsPage />} /> {/* ✅ New */}
           <Route path="/hr-notification" element={<HRNotificationDetail />} /> {/* ✅ New */}
-
         </Routes>
       </div>
     </div>

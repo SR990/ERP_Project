@@ -192,7 +192,7 @@ const CapacityDashboard = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
-        {/* Card Summary Blocks */}
+      
         <div className="bg-white p-6 rounded-lg shadow flex items-center justify-between h-28">
           <div>
             <div className="text-xl font-bold text-gray-800">350</div>

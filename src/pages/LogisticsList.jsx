@@ -124,6 +124,106 @@ export default function LogisticsList() {
       date: '01/11/2022',
       status: 'Approved',
     },
+    {
+      id: 13,
+      title: 'Security Upgrade',
+      purpose: 'Surveillance System',
+      amount: '700,000.00',
+      requestedBy: 'Ikenzy Obinna',
+      sentTo: 'Shola Okoye',
+      date: '28/10/2022',
+      status: 'Pending',
+    },
+    {
+      id: 14,
+      title: 'Customer Feedback Tool',
+      purpose: 'CRM Subscription',
+      amount: '320,000.00',
+      requestedBy: 'Osadebe Emmanuel',
+      sentTo: 'Fatima Yusuf',
+      date: '25/10/2022',
+      status: 'Approved',
+    },
+    {
+      id: 15,
+      title: 'Transport Reimbursement',
+      purpose: 'Field Work',
+      amount: '150,000.00',
+      requestedBy: 'Jonathan Gajie',
+      sentTo: 'Grace Ibe',
+      date: '22/10/2022',
+      status: 'Rejected',
+    },
+    {
+      id: 16,
+      title: 'Catering for Workshop',
+      purpose: 'Event Support',
+      amount: '270,000.00',
+      requestedBy: 'Fatima Yusuf',
+      sentTo: 'Christina Martins',
+      date: '20/10/2022',
+      status: 'Approved',
+    },
+    {
+      id: 17,
+      title: 'IT Infrastructure Upgrade',
+      purpose: 'Hardware Replacement',
+      amount: '3,500,000.00',
+      requestedBy: 'Otor John Stephen',
+      sentTo: 'Osadebe Emmanuel',
+      date: '18/10/2022',
+      status: 'Pending',
+    },
+    {
+      id: 18,
+      title: 'Medical Supplies',
+      purpose: 'Health and Safety',
+      amount: '210,000.00',
+      requestedBy: 'Grace Ibe',
+      sentTo: 'Jonathan Gajie',
+      date: '16/10/2022',
+      status: 'Approved',
+    },
+    {
+      id: 19,
+      title: 'New Employee Onboarding Kit',
+      purpose: 'HR Supplies',
+      amount: '90,000.00',
+      requestedBy: 'Shola Okoye',
+      sentTo: 'Christina Martins',
+      date: '14/10/2022',
+      status: 'Pending',
+    },
+    {
+      id: 20,
+      title: 'Office Cleaning Services',
+      purpose: 'Sanitation',
+      amount: '110,000.00',
+      requestedBy: 'Jonathan Gajie',
+      sentTo: 'Fatima Yusuf',
+      date: '12/10/2022',
+      status: 'Approved',
+    },
+    {
+      id: 21,
+      title: 'Data Analysis Software',
+      purpose: 'Analytics Tools',
+      amount: '540,000.00',
+      requestedBy: 'Christina Martins',
+      sentTo: 'Otor John Stephen',
+      date: '10/10/2022',
+      status: 'Rejected',
+    },
+    {
+      id: 22,
+      title: 'Business Cards Printing',
+      purpose: 'Staff Identity',
+      amount: '60,000.00',
+      requestedBy: 'Fatima Yusuf',
+      sentTo: 'Grace Ibe',
+      date: '08/10/2022',
+      status: 'Pending',
+    }
   ];
 
   const summaryStats = [
@@ -190,55 +290,56 @@ export default function LogisticsList() {
   <h2 className="text-xl font-semibold mb-4">All Logistics Requests</h2>
 
   <div className="overflow-y-auto max-h-[400px]">
-    <table className="min-w-full text-sm text-left">
-      <thead className="sticky top-0 bg-white">
-        <tr>
-          <th className="p-2 border-b border-gray-100">S/N</th>
-          <th className="p-2 border-b border-gray-100">Title</th>
-          <th className="p-2 border-b border-gray-100">Purpose</th>
-          <th className="p-2 border-b border-gray-100">Amount</th>
-          <th className="p-2 border-b border-gray-100">Requested By</th>
-          <th className="p-2 border-b border-gray-100">Sent To</th>
-          <th className="p-2 border-b border-gray-100">Date</th>
-          <th className="p-2 border-b border-gray-100">Status</th>
-          <th className="p-2 border-b border-gray-100">Action</th>
-        </tr>
-      </thead>
+  <table className="min-w-full text-sm text-left border-separate border-spacing-y-2">
+    <thead className="sticky top-0 bg-white">
+      <tr>
+        <th className="p-2 bg-white">S/N</th>
+        <th className="p-2 bg-white">Title</th>
+        <th className="p-2 bg-white">Purpose</th>
+        <th className="p-2 bg-white">Amount</th>
+        <th className="p-2 bg-white">Requested By</th>
+        <th className="p-2 bg-white">Sent To</th>
+        <th className="p-2 bg-white">Date</th>
+        <th className="p-2 bg-white">Status</th>
+        <th className="p-2 bg-white">Action</th>
+      </tr>
+    </thead>
 
-      <tbody>
-        {logisticsData.slice(0, 10).map((item, index) => {
-          let statusColor = '';
+    <tbody>
+      {logisticsData.slice(0, 10).map((item, index) => {
+        let statusColor = '';
 
-          if (item.status === 'Approved') {
-            statusColor = 'text-green-600';
-          } else if (item.status === 'Pending') {
-            statusColor = 'text-yellow-600';
-          } else {
-            statusColor = 'text-red-600';
-          }
+        if (item.status === 'Approved') {
+          statusColor = 'text-green-600';
+        } else if (item.status === 'Pending') {
+          statusColor = 'text-yellow-600';
+        } else {
+          statusColor = 'text-red-600';
+        }
 
-          return (
-            <tr
-              key={item.id}
-              className="hover:bg-gray-50 border-b border-gray-100"
-            >
-              <td className="p-2">{index + 1}</td>
-              <td className="p-2">{item.title}</td>
-              <td className="p-2">{item.purpose}</td>
-              <td className="p-2">{item.amount}</td>
-              <td className="p-2">{item.requestedBy}</td>
-              <td className="p-2">{item.sentTo}</td>
-              <td className="p-2">{item.date}</td>
-              <td className={`p-2 font-medium ${statusColor}`}>
-                {item.status}
-              </td>
-              <td className="p-2 text-blue-500 cursor-pointer">View</td>
-            </tr>
-          );
-        })}
-      </tbody>
-    </table>
-  </div>
+        return (
+          <tr
+            key={item.id}
+            className="bg-white shadow-sm hover:bg-gray-50"
+          >
+            <td className="p-2">{index + 1}</td>
+            <td className="p-2">{item.title}</td>
+            <td className="p-2">{item.purpose}</td>
+            <td className="p-2">{item.amount}</td>
+            <td className="p-2">{item.requestedBy}</td>
+            <td className="p-2">{item.sentTo}</td>
+            <td className="p-2">{item.date}</td>
+            <td className={`p-2 font-medium ${statusColor}`}>
+              {item.status}
+            </td>
+            <td className="p-2 text-blue-500 cursor-pointer">View</td>
+          </tr>
+        );
+      })}
+    </tbody>
+  </table>
+</div>
+
 </div>
 
     </div>

@@ -15,7 +15,7 @@ const Success2 = () => {
             <h2 className="text-2xl font-semibold text-green-500 mb-4">Congratulations</h2>
             <p>Your training request has been submitted successfully.</p>
             <button
-                onClick={() => navigate("/capacitydashboard")} // Navigate back to logistics page
+                onClick={() => navigate("/capacitydashboard")} 
                 className="bg-blue-600 text-white mt-5 px-6 py-3 rounded hover:bg-blue-700"
             >
                 Go Back 

@@ -26,7 +26,6 @@ const StocksInventoryPage = () => {
 
   return (
     <div className="p-6 bg-gray-100 min-h-screen">
-
       <div className="mb-6">
         <h1 className="text-2xl font-bold text-gray-800">Stocks and Inventory</h1>
         <p className="text-gray-500">Update stock and inventory table</p>
@@ -35,56 +34,81 @@ const StocksInventoryPage = () => {
       <div className="flex space-x-4 border-b mb-6">
         <button
           onClick={() => setActiveTab('stocks')}
-          className={`pb-2 px-4 font-medium ${
-            activeTab === 'stocks' ? 'border-b-2 border-blue-500 text-blue-500' : 'text-gray-500 hover:text-blue-500'
-          }`}
+          className={`pb-2 px-4 font-medium ${activeTab === 'stocks' ? 'border-b-2 border-blue-500 text-blue-500' : 'text-gray-500 hover:text-blue-500'}`}
         >
           Stocks
         </button>
         <button
           onClick={() => setActiveTab('inventory')}
-          className={`pb-2 px-4 font-medium ${
-            activeTab === 'inventory' ? 'border-b-2 border-blue-500 text-blue-500' : 'text-gray-500 hover:text-blue-500'
-          }`}
+          className={`pb-2 px-4 font-medium ${activeTab === 'inventory' ? 'border-b-2 border-blue-500 text-blue-500' : 'text-gray-500 hover:text-blue-500'}`}
         >
           Inventory
         </button>
       </div>
 
-
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mb-6">
         {activeTab === 'stocks' ? (
           <>
-            <Card title="15" label="Categories" trend="+2 more than last year" trendColor="text-green-500" />
-            <Card title="800" label="Total Items" trend="+10 more than last year" trendColor="text-green-500" />
-            <Card title="₦5,000,000" label="Total Item Cost" trend="-2.5% less than last year" trendColor="text-red-500" />
-            <Card title="200" label="Items Low in Stock" trend="+20 more than last week" trendColor="text-red-500" />
+            <div className="bg-white shadow-md rounded-lg p-4 w-full sm:w-[220px]">
+              <div className="text-xl font-semibold text-gray-800">15</div>
+              <div className="text-sm text-gray-500">Categories</div>
+              <div className="text-xs mt-1 text-green-500">+2 more than last year</div>
+            </div>
+            <div className="bg-white shadow-md rounded-lg p-4 w-full sm:w-[220px]">
+              <div className="text-xl font-semibold text-gray-800">800</div>
+              <div className="text-sm text-gray-500">Total Items</div>
+              <div className="text-xs mt-1 text-green-500">+10 more than last year</div>
+            </div>
+            <div className="bg-white shadow-md rounded-lg p-4 w-full sm:w-[220px]">
+              <div className="text-xl font-semibold text-gray-800">₦5,000,000</div>
+              <div className="text-sm text-gray-500">Total Item Cost</div>
+              <div className="text-xs mt-1 text-red-500">-2.5% less than last year</div>
+            </div>
+            <div className="bg-white shadow-md rounded-lg p-4 w-full sm:w-[220px]">
+              <div className="text-xl font-semibold text-gray-800">200</div>
+              <div className="text-sm text-gray-500">Items Low in Stock</div>
+              <div className="text-xs mt-1 text-red-500">+20 more than last week</div>
+            </div>
           </>
         ) : (
           <>
-            <Card title="100" label="Total Inventory Stock" trend="+5% since last month" trendColor="text-green-500" />
-            <Card title="₦1,200,000" label="Total Inventory Value" trend="-1.2% since last quarter" trendColor="text-red-500" />
-            <Card title="15" label="Returned Items" trend="+3% returns rate" trendColor="text-yellow-500" />
-            <Card title="8" label="Inventory Locations" trend="New warehouse added" trendColor="text-blue-500" />
+            <div className="bg-white shadow-md rounded-lg p-4 w-full sm:w-[220px]">
+              <div className="text-xl font-semibold text-gray-800">100</div>
+              <div className="text-sm text-gray-500">Total Inventory Stock</div>
+              <div className="text-xs mt-1 text-green-500">+5% since last month</div>
+            </div>
+            <div className="bg-white shadow-md rounded-lg p-4 w-full sm:w-[220px]">
+              <div className="text-xl font-semibold text-gray-800">₦1,200,000</div>
+              <div className="text-sm text-gray-500">Total Inventory Value</div>
+              <div className="text-xs mt-1 text-red-500">-1.2% since last quarter</div>
+            </div>
+            <div className="bg-white shadow-md rounded-lg p-4 w-full sm:w-[220px]">
+              <div className="text-xl font-semibold text-gray-800">15</div>
+              <div className="text-sm text-gray-500">Returned Items</div>
+              <div className="text-xs mt-1 text-yellow-500">+3% returns rate</div>
+            </div>
+            <div className="bg-white shadow-md rounded-lg p-4 w-full sm:w-[220px]">
+              <div className="text-xl font-semibold text-gray-800">8</div>
+              <div className="text-sm text-gray-500">Inventory Locations</div>
+              <div className="text-xs mt-1 text-blue-500">New warehouse added</div>
+            </div>
           </>
         )}
       </div>
 
-     
-      <div className="mb-6">
-        <button
-          onClick={() => navigate('/update-stock')}
-          className="bg-gradient-to-r from-blue-500 to-indigo-500 text-white font-semibold py-2 px-4 rounded-md shadow-md"
-        >
-          Update Stock
-        </button>
-      </div>
+      <div className="mb-6 bg-white h-20 flex justify-end items-center pr-6 rounded-2xl">
+  <button
+    onClick={() => navigate('/update-stock')}
+    className="bg-gradient-to-r from-blue-500 to-indigo-500 text-white font-semibold py-2 px-4 rounded-md shadow-md"
+  >
+    Update Stock
+  </button>
+</div>
 
-     
+
       <h2 className="text-lg font-semibold mb-2 text-gray-700">Stock List</h2>
 
-  
-      <div className="overflow-x-auto max-h-[400px]">
+      <div className="overflow-x-auto max-h-[400px] rounded-2xl">
         <table className="min-w-full bg-white rounded-md shadow">
           <thead className="bg-white text-gray-700 text-sm sticky top-0">
             <tr>
@@ -103,8 +127,8 @@ const StocksInventoryPage = () => {
           </thead>
           <tbody className="text-sm text-gray-700">
             {stockData.map((item, idx) => (
-              <tr key={idx} className="border-t">
-                <td className="px-4 py-2">{item.sn}</td>
+              <tr key={idx} className="border-t border-gray-100">
+                <td className="px-4 py-3">{item.sn}</td>
                 <td className="px-4 py-2">{item.img}</td>
                 <td className="px-4 py-2">{item.name}</td>
                 <td className="px-4 py-2">{item.id}</td>
@@ -125,13 +149,5 @@ const StocksInventoryPage = () => {
     </div>
   );
 };
-
-const Card = ({ title, label, trend, trendColor }) => (
-  <div className="bg-white shadow-md rounded-lg p-4 w-full sm:w-[220px]">
-    <div className="text-xl font-semibold text-gray-800">{title}</div>
-    <div className="text-sm text-gray-500">{label}</div>
-    {trend && <div className={`text-xs mt-1 ${trendColor}`}>{trend}</div>}
-  </div>
-);
 
 export default StocksInventoryPage;
