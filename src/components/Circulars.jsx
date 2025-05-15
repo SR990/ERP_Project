@@ -6,19 +6,110 @@ const Circulars = () => {
     const navigate = useNavigate();
 
     const circulars = [
-        { id: 1, title: "HR Circular for Operations Department Staff", from: "Admin, HR", to: "Operations Staff", date: "16/11/2022", type: "sent" },
-        { id: 2, title: "Finance Budget Guidelines for Q1", from: "Finance Dept", to: "All Departments", date: "10/12/2022", type: "received" },
-        { id: 3, title: "Annual Leave Policy Update", from: "HR Manager", to: "All Employees", date: "05/01/2023", type: "sent" },
-        { id: 4, title: "Internal Audit Notification", from: "Audit Team", to: "Finance Dept", date: "12/01/2023", type: "received" },
-        { id: 5, title: "HR Circular for Operations Department Staff", from: "Admin, HR", to: "Operations Staff", date: "16/11/2022", type: "sent" },
-        { id: 6, title: "HR Circular for Operations Department Staff", from: "Admin, HR", to: "Operations Staff", date: "16/11/2022", type: "sent" },
-        { id: 7, title: "HR Circular for Operations Department Staff", from: "Admin, HR", to: "Operations Staff", date: "16/11/2022", type: "received" },
-        { id: 8, title: "HR Circular for Operations Department Staff", from: "Admin, HR", to: "Operations Staff", date: "16/11/2022", type: "sent" },
-        { id: 9, title: "HR Circular for Operations Department Staff", from: "Admin, HR", to: "Operations Staff", date: "16/11/2022", type: "sent" },
-        { id: 10, title: "HR Circular for Operations Department Staff", from: "Admin, HR", to: "Operations Staff", date: "16/11/2022", type: "received" },
-        { id: 11, title: "HR Circular for Operations Department Staff", from: "Admin, HR", to: "Operations Staff", date: "16/11/2022", type: "sent" },
-        { id: 12, title: "HR Circular for Operations Department Staff", from: "Admin, HR", to: "Operations Staff", date: "16/11/2022", type: "sent" },
-        { id: 13, title: "HR Circular for Operations Department Staff", from: "Admin, HR", to: "Operations Staff", date: "16/11/2022", type: "sent" },
+        {
+            id: 1,
+            title: "HR Circular for Operations Department Staff",
+            from: "Admin, HR",
+            to: "Operations Staff",
+            date: "16/11/2022",
+            type: "sent"
+        },
+        {
+            id: 2,
+            title: "Finance Budget Guidelines for Q1",
+            from: "Finance Dept",
+            to: "All Departments",
+            date: "10/12/2022",
+            type: "received"
+        },
+        {
+            id: 3,
+            title: "Annual Leave Policy Update",
+            from: "HR Manager",
+            to: "All Employees",
+            date: "05/01/2023",
+            type: "sent"
+        },
+        {
+            id: 4,
+            title: "Internal Audit Notification",
+            from: "Audit Team",
+            to: "Finance Dept",
+            date: "12/01/2023",
+            type: "received"
+        },
+        {
+            id: 5,
+            title: "HR Circular for Operations Department Staff",
+            from: "Admin, HR",
+            to: "Operations Staff",
+            date: "16/11/2022",
+            type: "sent"
+        },
+        {
+            id: 6,
+            title: "HR Circular for Operations Department Staff",
+            from: "Admin, HR",
+            to: "Operations Staff",
+            date: "16/11/2022",
+            type: "sent"
+        },
+        {
+            id: 7,
+            title: "HR Circular for Operations Department Staff",
+            from: "Admin, HR",
+            to: "Operations Staff",
+            date: "16/11/2022",
+            type: "received"
+        },
+        {
+            id: 8,
+            title: "HR Circular for Operations Department Staff",
+            from: "Admin, HR",
+            to: "Operations Staff",
+            date: "16/11/2022",
+            type: "sent"
+        },
+        {
+            id: 9,
+            title: "HR Circular for Operations Department Staff",
+            from: "Admin, HR",
+            to: "Operations Staff",
+            date: "16/11/2022",
+            type: "sent"
+        },
+        {
+            id: 10,
+            title: "HR Circular for Operations Department Staff",
+            from: "Admin, HR",
+            to: "Operations Staff",
+            date: "16/11/2022",
+            type: "received"
+        },
+        {
+            id: 11,
+            title: "HR Circular for Operations Department Staff",
+            from: "Admin, HR",
+            to: "Operations Staff",
+            date: "16/11/2022",
+            type: "sent"
+        },
+        {
+            id: 12,
+            title: "HR Circular for Operations Department Staff",
+            from: "Admin, HR",
+            to: "Operations Staff",
+            date: "16/11/2022",
+            type: "sent"
+        },
+        {
+            id: 13,
+            title: "HR Circular for Operations Department Staff",
+            from: "Admin, HR",
+            to: "Operations Staff",
+            date: "16/11/2022",
+            type: "sent"
+        },
     ];
 
     return (
