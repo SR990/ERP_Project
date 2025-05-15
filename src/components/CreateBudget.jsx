@@ -22,7 +22,7 @@ const CreateBudget = () => {
     };
 
     const handleSubmitApproval = () => {
-        navigate('/success'); // Navigate to Success page
+        navigate('/success');
     };
 
     return (

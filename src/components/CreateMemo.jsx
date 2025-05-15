@@ -15,13 +15,14 @@ const CreateMemo = () => {
         attachmentType: '',
     });
 
-    const handleChange = (e) => {
-        const { name, value } = e.target;
+    const handleChange = ({ target: { name, value } }) => {
         setFormData((prev) => ({
             ...prev,
             [name]: value,
         }));
     };
+
+
 
     return (
         <div className="min-h-screen bg-[#f8f9fb] p-6">

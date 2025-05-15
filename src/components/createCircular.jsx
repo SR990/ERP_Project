@@ -9,7 +9,6 @@ const CreateCircular = () => {
     const [date, setDate] = useState('');
 
     const handleSendCircular = () => {
-        // You can pass the date to the success page if needed
         navigate('/success', { state: { message: 'Your circular has been sent successfully.' } });
     };
 

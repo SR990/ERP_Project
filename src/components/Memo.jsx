@@ -16,11 +16,11 @@ const Memo = () => {
     }));
 
     return (
-        <div className="min-h-screen bg-[#f8f9fb] p-6">
+        <div className="min-h-screen bg-gray-50 p-6">
             {/* Header */}
             <div className="flex justify-between items-start mb-6">
                 <div>
-                    <h1 className="text-2xl font-semibold text-[#212B36]">📘 Memo</h1>
+                    <h1 className="text-2xl font-semibold text-gray-800">📘 Memo</h1>
                     <p className="text-sm text-gray-500">Create and send memos to designated offices.</p>
                 </div>
                 <div className="flex items-center space-x-2">

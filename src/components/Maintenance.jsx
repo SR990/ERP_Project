@@ -20,7 +20,8 @@ export default function Maintenance() {
     );
 
     return (
-        <div className="min-h-screen bg-[#f9fbff] text-[#111827] font-sans p-4">
+        <div className="min-h-screen bg-gray-50 text-gray-900 font-sans p-4">
+
             {/* Header */}
             <div className="flex justify-between items-center mb-6">
                 <div>

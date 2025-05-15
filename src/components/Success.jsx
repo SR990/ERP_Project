@@ -12,17 +12,16 @@ const Success = () => {
                     <CheckCircle className="text-white w-8 h-8" />
                 </div>
             </div>
-            <h2 className="text-xl font-semibold text-black mb-2">Congratulations</h2>
-            <p className="text-center text-gray-600 mb-6">
-                Your budget has been submitted<br />
-                successfully.
-            </p>
-            <button
-                onClick={() => navigate('/')}
-                className="bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-semibold px-6 py-2 rounded-lg shadow-md hover:shadow-lg transition-all duration-300"
-            >
-                Ok
-            </button>
+            <div className=" bg-gray-50 flex flex-col items-center justify-center p-6">
+                <h1 className="text-2xl font-semibold text-green-600 mb-4">Success</h1>
+                <p className="text-sm text-gray-700 mb-6">{location.state?.message || 'Operation completed successfully.'}</p>
+                <button
+                    className="bg-blue-500 text-white px-4 py-2 rounded-md"
+                    onClick={() => navigate('/')}
+                >
+                    ok
+                </button>
+            </div>
         </div>
     );
 };
