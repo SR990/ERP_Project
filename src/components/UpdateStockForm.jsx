@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Route, useNavigate } from 'react-router-dom';
 
 const UpdateStockForm = () => {
   const [formData, setFormData] = useState({
@@ -37,7 +37,7 @@ const UpdateStockForm = () => {
 
   return (
     <div className="p-6 bg-gray-100 min-h-screen">
-      <button onClick={() => navigate(-1)} className="text-blue-600 mb-4 hover:underline">
+      <button onClick={() => r(-1)} className="text-blue-600 mb-4 hover:underline">
         ← Back
       </button>
 
